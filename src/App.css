@@ -1,0 +1,21 @@
+
+
+.body{
+    width: 100%;
+}
+body{
+
+    background-image: url("./assets/img/bg.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+   
+}
+main{
+    padding: 10px;
+}
+
+.loadingBody{
+    margin: auto;
+    align-items: center;
+}
+
