@@ -137,7 +137,7 @@ const handleChange = (e) => {
   
 
    const addSubmition=async(e)=>{
-    // e.preventDefault();
+    e.preventDefault();
     try {
         const res = await axios.post("/api/submssion/add",{studentId:user.username,groupID:groupId._id,groupName:groupId.groupName,eventId:eventId,eventName:eventName,eventType:eventtype,comments:data.comments,url:fileURL,isSubmitted:isSubmitted});
         toast.success(res.data.msg ,{
@@ -173,7 +173,7 @@ const handleChange = (e) => {
   return (
     <div>
         {/* AddSubmission component */}
-        
+        <ToastContainer />
           <form>
               <div class="mb-3">
                   <label for="disabledTextInput" class="form-label">Student Name</label>

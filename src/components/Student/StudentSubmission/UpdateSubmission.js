@@ -127,7 +127,7 @@ const [data,setData]=useState({
 
     //update submission
     const updateSubmission=async(e)=>{
-        // e.preventDefault();
+        e.preventDefault();
         try {
             const res = await axios.put(`/api/submssion/updateSubmssion/${getSubmission?._id}`,{
                 studentId:user.username,
@@ -172,6 +172,7 @@ const [data,setData]=useState({
 
   return (
     <div>UpdateSubmission
+        <ToastContainer />
 
 <form>
               <div class="mb-3">
